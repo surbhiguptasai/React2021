@@ -4,3 +4,10 @@ Mithril Emmet
 Open in Browser 
 Prettier Formatter 
 Simple React Snippets
+
+
+git add .
+git commit -m "update React"
+git push
+
+git push --set-upstream origin main
