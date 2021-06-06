@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+           console.log(document.getElementsByTagName("ul")[0].childNodes.length)
+           console.log(document.getElementsByTagName("ul")[0].children.length)
+           console.log(document.getElementsByTagName("ul")[0].innerText)
+           console.log(document.getElementsByTagName("ul")[0].innerHTML)
+           console.log(document.getElementsByTagName("ul")[0].textContent)
+           console.log(document.body.children[0].tagname)
+           console.log(document.querySelector("ul").childNodes.length)
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Welcome to your life</h1>
+    <ul>
+        <li>List <span>Item</span> 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
+</body>
+</html>

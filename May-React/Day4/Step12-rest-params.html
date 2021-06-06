@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestParams</title>
+    <script>
+        //  function adder(num1,num2){
+        //    return num1+num2
+        // }
+        // console.log(adder(9,4)) //13
+        // console.log(adder(9,4,5))
+        // console.log(adder(9,4,6,8))
+
+
+        //let/var hoisted to the temporal dead zone.Let used when working with blocks
+        //arguments is soon depricated
+        // function adder(){
+        //     let total=0
+        //     for(let i=0;i<arguments.length;i++){
+        //         total+=arguments[i]
+        //     }
+        //     return total
+        // }
+        // console.log(adder(9,4)) //13
+        // console.log(adder(9,4,5))
+        // console.log(adder(9,4,6,8))
+
+        // function adder(...nums){
+        //     let total=0
+        //     for(let i=0;i<nums.length;i++){
+        //         total+=nums[i]
+        //     }
+        //     return total
+        // }
+        // console.log(adder(9,4)) //13
+        // console.log(adder(9,4,5))
+        // console.log(adder(9,4,6,8))
+
+
+        // function adder(...nums){
+        //     let total=0
+        //     nums.forEach(function(val){
+        //         total+=val
+        //     })
+        //     return total
+        // }
+        // console.log(adder(9,4))
+        // console.log(adder(9,4,5))
+        // console.log(adder(9,4,6,8))
+
+//RestParams
+        function adder(...nums){
+        
+            let total=nums.reduce(function(init,val){
+                return init+val
+            },0)
+            return total
+        }
+
+        // console.log(adder(5,6))
+        // console.log(adder(5,6,7))
+        // console.log(adder(5,6,8,9))
+
+        var arr=[5,6,7,8]
+//console.log(adder(arr[0],arr[1],arr[2],arr[3]))
+    //use SpreadOperator instead of above
+         console.log(adder(...arr))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <style>
+    .box{
+        width: 50px;
+        height: 50px;
+        background-color: coral;
+        border: 1px solid transparent;
+        margin: 5px;
+        float: left;
+        line-height: 50px;
+        text-align: center;
+    }
+</style>
+<body>
+
+<h2>Finding HTML Elements by Tag Name</h2>
+<h2 id="name">Surbhi Gupta</h2>
+<p>Hello World!</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+
+<p id="demo"></p>
+<div class="container"></div>
+
+<script>
+var x = document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = 
+'The text in first paragraph (index 0) is: ' + x[0].innerHTML;
+console.log(document.getElementsByTagName("h2")[1].innerText);
+console.log(document.getElementById("name").innerText);
+var x
+window.onload = function(){ 
+    x = document.querySelector(".container");
+
+var box = document.createElement("button");
+                box.innerText = "Box";
+                box.setAttribute("class", "box");
+                x.appendChild(box);
+                document.querySelectorAll("button")[0]
+            .addEventListener("click", addBoxHandler);
+}
+function addBoxHandler(){
+    console.log("Button Clicked")
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+    <script>
+        /*let Hero=function(fun1,fun2){
+            return function(num){
+                let power=fun1(fun2(num))
+                return power
+            }
+        }
+        function ffun(num){
+            return num+num
+        }
+        function sfun(num){
+            return num*num
+        }
+        let hero=Hero(ffun,sfun)
+        console.log(hero(5))*/
+
+      let promise=new Promise(function(resolve,reject){
+        //   let xhr=new XMLHttpRequest()
+        //   xhr.open()
+        //   xhr.send()
+          
+        setTimeout(function(){
+            if(true){
+                resolve("Success:Resolve Data")
+            }else{
+                reject("Success:Resolve Data")
+            }
+        },2000)
+      }) //
+
+      promise
+      .then(function(data){
+        console.log("resolve:",data)
+        return data.toUpperCase()
+      })
+      .then(function(data){
+        console.log("second then:",data)
+        return data.toLowerCase()
+      })
+      .then(function(data){
+        console.log("third then:",data)
+      })
+      .catch(function(error){
+        console.log("reject:",error)
+      })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

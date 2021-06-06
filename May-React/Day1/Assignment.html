@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function fun1(){
+            console.log(document.querySelector("ul").children.length);
+        }
+        function fun2(){
+            console.log(document.querySelector("ul").children.length);
+        }
+        function fun3(){
+            console.log(document.querySelector("ul").children.length);
+        }
+        window.onload=fun2;
+         document.addEventListener("DOMContentLoaded",fun3);
+    </script>
+</head>
+<body onload="fun1()">
+    <h1>Welcome to your life</h1>
+    <ul>
+        <li>List <span>Item</span> 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
+</body>
+</html>
