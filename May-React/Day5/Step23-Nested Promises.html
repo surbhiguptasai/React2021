@@ -35,7 +35,7 @@
       let asyncCallThree = function(){ 
       let promise = new Promise(function(resolve, reject){ 
       setTimeout(function(){ 
-      if(false){ 
+      if(true){ 
         resolve(" Resolve Data from Async Call Three "); 
       }else{ 
         reject(" Reject Message from Async Call Three ") 
@@ -44,19 +44,19 @@
       }); 
       return promise; 
       }; 
-      /* 
+      
       Promise.all([asyncCallOne(),asyncCallTwo(), asyncCallThree()]) 
       .then( res => console.log(res) ) 
-      .catch( error => console.log(error) ) */ 
-      
-      /* Promise.any([asyncCallOne(),asyncCallTwo(), asyncCallThree()]) 
-      .then( res => console.log(res) ) 
-      .catch( error => console.log(error) ) */ 
-      
-      
-      Promise.race([asyncCallOne(),asyncCallTwo(), asyncCallThree()]) 
-      .then( res => console.log(res) ) 
       .catch( error => console.log(error) ) 
+      
+      // Promise.any([asyncCallOne(),asyncCallTwo(), asyncCallThree()]) 
+      // .then( res => console.log(res) ) 
+      // .catch( error => console.log(error) ) 
+      
+      
+      // Promise.race([asyncCallOne(),asyncCallTwo(), asyncCallThree()]) 
+      // .then( res => console.log(res) ) 
+      // .catch( error => console.log(error) ) 
       </script>
 </head>
 <body>

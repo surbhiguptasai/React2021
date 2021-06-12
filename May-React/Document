@@ -5,7 +5,7 @@ Open in Browser
 Prettier Formatter 
 Simple React Snippets
 
-
+git status
 git add .
 git commit -m "update React"
 git push
