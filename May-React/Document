@@ -5,6 +5,8 @@ Open in Browser
 Prettier Formatter 
 Simple React Snippets
 
+npx create-react-app step8
+
 git status
 git add .
 git commit -m "update React"
@@ -16,9 +18,4 @@ git push --set-upstream origin main
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(
-  <h1>
-    Hello World
-  </h1>,
-  document.getElementById('root')
-);
+ReactDOM.render(<h1>Hello World</h1>,document.getElementById('root'));
